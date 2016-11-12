@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+<script type="text/javascript">
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '2860723523',
+    clientId: '2abd3c4520004001b5bef81e69569a25',
+    accessToken: '2860723523.2abd3c4.0d26c9e3eca0464ea915f9ea30e10e45',
+    resolution: 'standard_resolution',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+    sortBy: 'most-recent',
+    limit: 20,
+    links: false,
+    resolution: 'thumbnail',
+  });
+  userFeed.run();
+</script>
+
+</head>
+<body>
+<h1> Instafeed </h1>
+<div id="instafeed"></div>
+</body>
+</html>
